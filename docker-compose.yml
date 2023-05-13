@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: practical_sql_postgres
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: talel
+      POSTGRES_PASSWORD: talel
+      POSTGRES_DB: practical_sql
+    ports:
+      - "5432:5432"
